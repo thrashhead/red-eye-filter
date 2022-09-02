@@ -35,3 +35,13 @@ EYE_PATTERN_4: EyePattern = (
   "|/ \\|",
   "\\---/"
 )
+
+def flat(pattern):
+  res = ""
+  for i in range(5):
+    for j in range(5):
+      res += pattern[j][i]
+  return res
+
+ALL_EYE_PATTERNS = [flat(EYE_PATTERN_1), flat(EYE_PATTERN_2), flat(EYE_PATTERN_3), flat(EYE_PATTERN_4)]
+
