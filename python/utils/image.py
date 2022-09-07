@@ -15,6 +15,9 @@ class PackedImage:
         self.pixels: List[Pixel] = pixels
     
     def __str__ (self):
+        return str(self.resolution) + '\n' + ' '.join(str(p) for p in self.pixels) + '\n'
+
+    def __repr__ (self):
         return str(self.resolution) + '\n' + ' '.join(str(p) for p in self.pixels)
 
     def __eq__(self, other):

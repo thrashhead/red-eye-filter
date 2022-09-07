@@ -10,6 +10,9 @@ class Pixel:
     def __str__ (self):
         return '(' + str(self.red) + ', ' + str(self.green) + ', ' + str(self.blue) + ', ' + str(self.alpha) + ')'
 
+    def __repr__ (self):
+        return '(' + str(self.red) + ', ' + str(self.green) + ', ' + str(self.blue) + ', ' + str(self.alpha) + ')'
+
     def __eq__(self, other):
         return self.red == other.red and self.green == other.green and \
             self.blue == other.blue and self.alpha == other.alpha

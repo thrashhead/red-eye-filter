@@ -10,3 +10,7 @@ class Resolution:
 
     def __eq__(self, other):
         return self.width == other.width and self.height == other.height
+    
+    def __iter__(self):
+        yield self.width
+        yield self.height
